@@ -10,3 +10,7 @@
     # Into this (on the front-end):
     <a href="/about-us" class="button small" target="_blank">Learn More</a>
 ```
+
+![modal](/docs/button.png)
+
+![modal](/docs/modal.png)
