@@ -14,3 +14,10 @@
 ![modal](/docs/button.png)
 
 ![modal](/docs/modal.png)
+
+## Installing with Composer (if using Bedrock)
+
+```
+composer config repositories.wp-button-shortcode git https://github.com/pvtl/wp-button-shortcode
+composer require pvtl/wp-button-shortcode
+```
