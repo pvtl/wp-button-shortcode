@@ -1,0 +1,17 @@
+{
+  "name": "pvtl/wp-button-shortcode",
+  "description": "Adds a GUI and shortcode for creating buttons from the WYSIWYG editor",
+  "homepage": "https://github.com/pvtl/wp-button-shortcode",
+  "license": "GPL3",
+  "authors": [
+    {
+      "name": "Matt Mcnamee",
+      "email": "matt.m@pvtl.io",
+      "homepage": "https://www.pivotalagency.com.au/"
+    }
+  ],
+  "type": "wordpress-plugin",
+  "require": {
+    "php": ">=5.6"
+  }
+}
