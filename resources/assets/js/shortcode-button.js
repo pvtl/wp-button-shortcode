@@ -14,6 +14,7 @@
                             values: [
                                 { text: 'Small', value: 'small' },
                                 { text: 'Regular', value: 'regular' },
+                                { text: 'Wide', value: 'wide' },
                                 { text: 'Large', value: 'large' },
                             ],
                             value: ''

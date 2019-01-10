@@ -8,7 +8,7 @@
  * Author URI:      http://pivotal.agency
  * Text Domain:     button-shortcode
  * Domain Path:     /languages
- * Version:         0.1.1
+ * Version:         0.1.3
  *
  * @package         ButtonShortcode
  */
