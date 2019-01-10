@@ -8,7 +8,7 @@
  * Author URI:      http://pivotal.agency
  * Text Domain:     button-shortcode
  * Domain Path:     /languages
- * Version:         0.1.0
+ * Version:         0.1.1
  *
  * @package         ButtonShortcode
  */
@@ -70,6 +70,7 @@ class ButtonShortcode
                     'text' => 'Learn More',
                     'href' => '#',
                     'size' => '',
+                    'style' => '',
                     'target' => '',
                 );
 
@@ -85,12 +86,16 @@ class ButtonShortcode
                     $attr['size'] = $input['size'];
                 }
 
+                if (!empty($input['style'])) {
+                    $attr['style'] = $input['style'];
+                }
+
                 if (!empty($input['target'])) {
                     $attr['target'] = $input['target'];
                 }
 
                 $html = '<a href="' . $attr['href'] . '" ';
-                $html .= 'class="button ' . $attr['size'] . '" ';
+                $html .= 'class="button ' . $attr['size'] . ' '  . $attr['style'] . '" ';
                 $html .= (!empty($input['target'])) ? 'target="'.$input['target'].'"' : '';
                 $html .= '>'. $attr['text'] . '</a>';
 

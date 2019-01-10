@@ -13,8 +13,18 @@
                             name: 'size',
                             values: [
                                 { text: 'Small', value: 'small' },
-                                { text: 'Regular', value: '' },
+                                { text: 'Regular', value: 'regular' },
                                 { text: 'Large', value: 'large' },
+                            ],
+                            value: ''
+                        },
+                        {
+                            type: 'listbox',
+                            label: 'Style',
+                            name: 'style',
+                            values: [
+                                { text: 'Solid', value: 'solid' },
+                                { text: 'Hollow', value: 'hollow' },
                             ],
                             value: ''
                         },
@@ -44,7 +54,7 @@
                         },
                     ],
                     onsubmit: function( e ) {
-                        editor.insertContent( '[button size="' + e.data.size + '" text="' + e.data.text + '" href="' + e.data.href + '" target="' + e.data.target + '"]');
+                        editor.insertContent( '[button size="' + e.data.size + '" style="' + e.data.style + '" text="' + e.data.text + '" href="' + e.data.href + '" target="' + e.data.target + '"]');
                     }
                 });
             },
