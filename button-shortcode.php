@@ -72,6 +72,7 @@ class ButtonShortcode
                     'size' => '',
                     'style' => '',
                     'target' => '',
+                    'class' => 'button',
                 );
 
                 if (!empty($input['text'])) {
@@ -94,9 +95,11 @@ class ButtonShortcode
                     $attr['target'] = $input['target'];
                 }
 
+                $attr = apply_filters('wpbs_attributes', $attr);
+
                 $html = '<a href="' . $attr['href'] . '" ';
-                $html .= 'class="button ' . $attr['size'] . ' '  . $attr['style'] . '" ';
-                $html .= (!empty($input['target'])) ? 'target="'.$input['target'].'"' : '';
+                $html .= 'class="'.$attr['class'].' ' . $attr['size'] . ' '  . $attr['style'] . '" ';
+                $html .= (!empty($attr['target'])) ? 'target="'.$attr['target'].'"' : '';
                 $html .= '>'. $attr['text'] . '</a>';
 
                 return $html;
